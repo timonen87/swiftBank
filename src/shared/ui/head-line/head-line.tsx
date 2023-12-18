@@ -16,5 +16,3 @@ export const HeadLine = ({ tag, children }: HeadLineProps): JSX.Element => {
       return <h2 className={style.h3}>{children}</h2>;
   }
 };
-
-export default HeadLine;
