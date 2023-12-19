@@ -19,10 +19,12 @@ interface TextProps
   children: ReactNode;
 }
 
-export const Text = (
-  { className, children, size = "m", ...props }: TextProps,
-  ref: ForwardedRef<HTMLInputElement>,
-): JSX.Element => {
+export const Text = ({
+  className,
+  children,
+  size = "m",
+  ...props
+}: TextProps): JSX.Element => {
   return (
     <p
       className={cn(styles.p, className, {
